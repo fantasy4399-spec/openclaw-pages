@@ -30,15 +30,8 @@
       display: inline-block;
       margin-bottom: 15px;
     }
-    h1 {
-      color: #333;
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-    .subtitle {
-      color: #666;
-      font-size: 1rem;
-    }
+    h1 { color: #333; font-size: 1.8rem; margin-bottom: 10px; }
+    .subtitle { color: #666; font-size: 1rem; }
     .card {
       background: white;
       border-radius: 20px;
@@ -62,15 +55,8 @@
       justify-content: center;
       font-size: 24px;
     }
-    .card-title {
-      font-size: 1.2rem;
-      color: #333;
-      font-weight: 600;
-    }
-    .card-content {
-      color: #555;
-      line-height: 1.7;
-    }
+    .card-title { font-size: 1.2rem; color: #333; font-weight: 600; }
+    .card-content { color: #555; line-height: 1.7; }
     .highlight {
       background: #fff5f5;
       border-left: 4px solid #ff6b6b;
@@ -78,20 +64,9 @@
       border-radius: 0 12px 12px 0;
       margin: 12px 0;
     }
-    .photo-placeholder {
-      background: #f0f0f0;
-      border-radius: 12px;
-      padding: 40px;
-      text-align: center;
-      color: #999;
-      margin: 15px 0;
-    }
-    .footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 0.9rem;
-    }
+    .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; }
+    .photo { width: 100%; border-radius: 12px; object-fit: cover; }
+    .footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
     .tag {
       display: inline-block;
       background: #e8f5e9;
@@ -136,17 +111,12 @@
         <p>🏔️ 山里空气很好，待着非常舒服</p>
         <span class="tag">#户外</span>
         <span class="tag">#亲近大自然</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="card-icon">📸</div>
-        <div class="card-title">今日照片</div>
-      </div>
-      <div class="photo-placeholder">
-        <p>📷 照片在哪里？</p>
-        <p style="font-size:0.85rem;margin-top:8px">把照片私聊发给我，我帮你贴上来~</p>
+        
+        <div class="photos">
+          <img src="https://raw.githubusercontent.com/fantasy4399-spec/lixinxing/main/photos/xinxin-trips-2.jpg" alt="采蕨菜1" class="photo">
+          <img src="https://raw.githubusercontent.com/fantasy4399-spec/lixinxing/main/photos/xinxin-trips-3.jpg" alt="采蕨菜2" class="photo">
+          <img src="https://raw.githubusercontent.com/fantasy4399-spec/lixinxing/main/photos/xinxin-trips-4.jpg" alt="采蕨菜3" class="photo">
+        </div>
       </div>
     </div>
 
