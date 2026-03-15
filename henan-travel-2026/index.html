@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 河南亲子旅游回忆</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fafafa;
+      color: #262626;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #dbdbdb;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: 600;
+      background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-meta {
+      font-size: 14px;
+      color: #8e8e8e;
+    }
+
+    /* Main */
+    .main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Masonry Grid */
+    .masonry {
+      column-count: 4;
+      column-gap: 16px;
+    }
+
+    @media (max-width: 1200px) {
+      .masonry { column-count: 3; }
+    }
+
+    @media (max-width: 900px) {
+      .masonry { column-count: 2; }
+    }
+
+    @media (max-width: 600px) {
+      .masonry { column-count: 1; }
+    }
+
+    /* Photo Card */
+    .photo-card {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .photo-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .photo-card .caption {
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #262626;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .lightbox .caption {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 24px;
+      font-size: 14px;
+      max-width: 80%;
+      text-align: center;
+    }
+
+    /* Section Title */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-left: 16px;
+      border-left: 4px solid #dc2743;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #8e8e8e;
+      font-size: 14px;
+    }
+
+    /* Decorative elements */
+    .tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #f0f0f0;
+      border-radius: 12px;
+      font-size: 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .tag.henan { background: #fff0e6; color: #cc2366; }
+    .tag.science { background: #e6f7ff; color: #1890ff; }
+    .tag.food { background: #fff7e6; color: #fa8c16; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1>2026 河南亲子旅游回忆</h1>
+      <span class="header-meta">19张照片 · 春节假期</span>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="masonry">
+      <!-- 河南博物院 -->
+      <div class="photo-card">
+        <img src="photos/DDCB59B5-DB40-4D78-9424-7BE99D5E0FDC.jpg" alt="河南博物院" loading="lazy">
+        <div class="caption"><span class="tag henan">河南博物院</span><br>河南博物院门前，准备开启博物馆文化之旅。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/A7527083-9600-402F-8E2B-5AA06322DC15.jpg" alt="河南博物院散步" loading="lazy">
+        <div class="caption"><span class="tag henan">河南博物院</span><br>妈妈带宝宝在河南博物院门口散步，享受充实的亲子出游时光。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/2DB64B26-A70B-4FDF-8FBA-DF7F757BB682.jpg" alt="河南博物院合影" loading="lazy">
+        <div class="caption"><span class="tag henan">河南博物院</span><br>妈妈和宝宝在河南博物院前的温馨合影，记录快乐的亲子出行时光。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/4BD4732C-8023-46F0-8E79-B9429B12927F.jpg" alt="河南博物院打卡" loading="lazy">
+        <div class="caption"><span class="tag henan">河南博物院</span><br>妈妈带宝宝在河南博物院门前打卡合照。</div>
+      </div>
+
+      <!-- 年味 -->
+      <div class="photo-card">
+        <img src="photos/0FB950CB-C5FF-4AF9-81CF-F63800F17AF4.jpg" alt="年味装饰" loading="lazy">
+        <div class="caption"><span class="tag food">年味</span><br>宝宝在充满年味儿的装饰前活泼地拍照。</div>
+      </div>
+
+      <!-- 高铁出行 -->
+      <div class="photo-card">
+        <img src="photos/84BD8464-21C8-4F2C-8E56-DA07F5D5801A.jpg" alt="高铁车票" loading="lazy">
+        <div class="caption"><span class="tag henan">出行</span><br>手机上显示着订好的高铁车票，正规划着未来的出行计划。</div>
+      </div>
+
+      <!-- 旅游攻略 -->
+      <div class="photo-card">
+        <img src="photos/6B26F464-DC0F-443D-8EEA-47664BA07291.jpg" alt="旅游攻略" loading="lazy">
+        <div class="caption"><span class="tag henan">攻略</span><br>家人聚在一起研究河南旅游攻略，规划充满期待的假期行程。</div>
+      </div>
+
+      <!-- 糖葫芦 -->
+      <div class="photo-card">
+        <img src="photos/8397F31E-2886-4697-A6A3-E4C8A60F4E67.jpg" alt="糖葫芦" loading="lazy">
+        <div class="caption"><span class="tag food">美食</span><br>妈妈带着宝宝在路边一起吃糖葫芦，氛围很惬意。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/77FE8CF1-F1F1-487B-9BEC-BAC1016430F8.jpg" alt="糖葫芦阳光" loading="lazy">
+        <div class="caption"><span class="tag food">美食</span><br>阳光下的路边，妈妈陪着拿糖葫芦的宝宝，享受惬意的户外时光。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/F0FD52FF-3AF3-4894-8836-88B8AEB604E2.jpg" alt="糖葫芦出游" loading="lazy">
+        <div class="caption"><span class="tag food">美食</span><br>阳光明媚的街边，妈妈带着拿着糖葫芦的宝宝一起惬意出游。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/BD98BE3A-D4F8-4E92-A3C6-CF9445AA9844.jpg" alt="糖葫芦街头" loading="lazy">
+        <div class="caption"><span class="tag food">美食</span><br>阳光明媚的街头，妈妈陪着拿糖葫芦的宝宝开心出游。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/F4CD31F0-A3A9-49A8-8C8E-2F9D71F09CF7.jpg" alt="糖葫芦全家" loading="lazy">
+        <div class="caption"><span class="tag food">美食</span><br>阳光下的路边，妈妈陪着宝宝一起吃糖葫芦，画面温馨又活泼。</div>
+      </div>
+
+      <!-- 科技馆 -->
+      <div class="photo-card">
+        <img src="photos/B1C44DA7-6379-490E-BF9D-88A363B27B43.jpg" alt="科技馆航天" loading="lazy">
+        <div class="caption"><span class="tag science">科技馆</span><br>妈妈陪着宝宝在科技馆体验航天梦。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/A21DDB4B-B1A0-4D71-B827-79D1449311EC.jpg" alt="宇航员变装" loading="lazy">
+        <div class="caption"><span class="tag science">科技馆</span><br>科技馆的航天展区里，妈妈陪着孩子体验有趣的宇航员变装拍照。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/06D3583D-854C-4A6B-9D3B-0265A54F44AD.jpg" alt="星球重力" loading="lazy">
+        <div class="caption"><span class="tag science">科技馆</span><br>科技馆里，宝宝好奇地探索星球重力的奥秘。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/2F0AECCB-4819-4238-A5D7-655C7FE00057.jpg" alt="探索星球" loading="lazy">
+        <div class="caption"><span class="tag science">科技馆</span><br>在科技馆里好奇探索星球重量的宝宝</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/58FCAA22-C3A2-458B-8160-1CE5072814E9.jpg" alt="科学奥秘" loading="lazy">
+        <div class="caption"><span class="tag science">科技馆</span><br>科技馆里，家人陪着孩子们一起探索科学奥秘，记录下好奇求知的瞬间。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/35FF5655-DE65-434E-85EE-F65B185F8D7F.jpg" alt="科技馆探索" loading="lazy">
+        <div class="caption"><span class="tag science">科技馆</span><br>科技馆里，妈妈陪着两个孩子在展台前好奇地探索和记录。</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="photos/90F98CE9-53D4-421C-80C2-3A52CB1E2536.jpg" alt="郑州科技馆" loading="lazy">
+        <div class="caption"><span class="tag science">郑州科技馆</span><br>郑州科技馆内，一家三口在游乐区合影，记录快乐的亲子时光。</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>2026 河南亲子旅游回忆 · 春节假期</p>
+    <p style="margin-top: 8px; font-size: 12px;">Made with ❤️ by 星星小棉袄</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="">
+    <div class="caption"></div>
+  </div>
+
+  <script>
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('.caption');
+
+    document.querySelectorAll('.photo-card img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxCaption.textContent = img.nextElementSibling.textContent;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+</body>
+</html>
